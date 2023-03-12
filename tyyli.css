@@ -815,6 +815,13 @@ a {
 	border: transparent
   }
 
+  @media only screen and (max-width: 480px) {
+  .contacs_box{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 /*----------------------------------------Contact-sivun kiitusta osio----------------------------------------------------------------------*/
 
 .link-container {

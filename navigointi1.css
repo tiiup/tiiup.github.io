@@ -56,7 +56,7 @@
       }
   }
   
-  @media (max-width: 100px) {
+  @media (max-width: 10px) {
     .navbar-toggle {
       display: block;
     }
