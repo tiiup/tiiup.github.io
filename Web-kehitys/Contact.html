@@ -1,0 +1,159 @@
+<!--HTML-versio jota käytetään-->
+<!DOCTYPE html>
+
+<html lang="fi">
+<!--html aloitus tagi-->
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <!--Yleiset (otsikkotason) määritykset-->
+    <head>
+        <link rel="stylesheet" href="tyyli.css">
+
+        <title> Contact</title>
+        <!--Merkistön koodaustapa-->
+        <meta charset="utf-8">
+        <!--Katseluikkunan leveyden määritys: määritetään seuraamaan ruudun leveyttä-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        
+        <!--Oma CSS tiedosto "tyyli"-->
+        <link rel="stylesheet" href="tyyli.css">
+        <link rel="stylesheet" href="navigointi2.css">
+        <link rel="stylesheet" href="navigointi1.css">
+
+        <!-- (Verkon yli haettu) Bootstrapin tarvitsema JQuery-tiedosto.-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    </head>
+
+        <body>
+
+               
+             <!--Yläpalkin taustanväri-->
+             <div class="container-fluid bg-custom2">
+              <div class = "row"></div>
+          
+              <!--Kuvan ja sen skaalaus-->
+              <img src="kukkasia.jpg" class="img-fluid" style="width: 100%;height: auto;" alt="Yläosankuva"> 
+              
+              <!--Navigointipalkki-->
+            
+              <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                  <div class="container_nav">
+               <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+                      
+                  
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+                <!-- Navigointipalkin painikkeet -->
+                
+                <li><a href="Home.html" type= button-9 class="btn button-9">Home</a></li>
+                <li><a href="About.html" type= button-9 class="btn button-9">About</a></li>
+                <li><a href="Resume.html" type= button-9 class="btn button-9">Resume</a></li>
+                <li><a href="Projects.html" type= button-9 class="btn button-9">Projects</a></li>
+                <li><a href="Contact.html" type= button-9 class="button-9"class="btn button-9">Contact</a></li>
+                <script>
+                  // Get all the buttons
+                  const buttons = document.querySelectorAll('.button-9');
+              
+                  // Loop through the buttons and add an event listener to each one
+                  buttons.forEach(button => {
+                      button.addEventListener('click', () => {
+                          // Remove the "selected" class from all buttons
+                          buttons.forEach(button => {
+                              button.classList.remove('selected');
+                          });
+              
+                          // Add the "selected" class to the clicked button
+                          button.classList.add('selected');
+                      });
+                  });
+              </script>
+                </ul>
+            </div> 
+            </nav>
+          </div>
+
+              <div class="container-fluid center">
+                <div class = "row"></div>
+                
+            <!--Otsikko-->  
+            <p class="ex1"></p>
+            <h1 class="header-contact" style="width: 100%;height: auto;">Contact</h1>
+            
+            <p class="subtitle-contac" style="width: 100%;height: auto;">For more information, don’t hesitate to contact me. 
+               You can send an e-mail or message through the contact form.</p> 
+               <p class="ex1"></p>
+               <hr class ="new1">   
+
+               
+               <div class="col-xs-10 col-sm-6 col-lg-11 center" style= "background-color: #A19E95; padding:10x; margin:5px; display:flex; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto;" >
+                
+               <div class="contact-container"style="display: flex; align-items: center; justify-content: center;">
+               <div class="contact-details"class="col-xs-10 col-sm-6 col-lg-5"style="margin-right: 20px;">
+               <h2 class="header_details">Contact Details</h2>
+               <br>
+                <p class= "contact_info" &nbsp> <img src="images/email.jpg" alt="email" style="padding: 10px; width:60px;height:60px;" &nbsp> tiia.puumalainen@hotmail.com</p>
+                <p class= "contact_info" &nbsp> <img src="images/phone.jpg" alt="puhelin" style="padding: 10px; width:60px;height:60px;" &nbsp> (+358) 50-3779519</p>
+                <p class= "contact_info" &nbsp> <img src="images/location.jpg" alt="sijainti" style="padding: 10px; width:60px;height:60px;" &nbsp> Joensuu, Finland</p>
+                <br>
+
+                
+                <div> <a class="badge-base__link LI-simple-link" href="https://fi.linkedin.com/in/tiia-puumalainen?trk=profile-badge" target="_blank"> <img src= "images/linked.png" alt="Link to LinkedIn" style="padding: 10px;width:60px;height:55px;margin-right: 20px;margin-left: 50px;" ><a href="https://github.com/tiiup" target="_blank"><img src="images/Github.webp"  alt="Link to Github" style="width:50px;height:50px;"></a>
+              
+              </div>
+            </div>
+
+               <!--<div class="rectangle-4">-->
+                <!--Contact form-->
+                <div class="col-xs-10 col-sm-6 col-lg-6"style= "border:1px solid #;">
+                <div class="contact-form">
+
+                    
+                    <form action="https://formsubmit.co/tiia.puumalainen@hotmail.com" method="POST"></form>
+                  
+                      <label for="name"><strong>Name</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  
+                      <label for="email"><strong>Email</label>
+                      <input type="text" id="email" name="email" placeholder="Enter a valid email address"required>
+
+                      <input type="hidden" name="_next" value="file:///D:/Web-kehitys/pages/thankyou.html">
+                  
+                      <label for="subject"><strong>Subject</label>
+                      <input type="text" id="subject" name="subject" placeholder="Type the subject">
+                  
+                      <label for="message"><strong>Message</label>
+                      <textarea id="message" name="message" placeholder="Enter your message.." style="height:200px" required></textarea>
+                  
+                      <input type="submit" value="Send">
+                      
+                      
+                    </form>
+                  </div>
+                </div>
+                  </div> 
+                </div>
+              </div>
+                <p class="ex1"></p>
+
+                <hr class ="new1">
+                <p class="copyright" style="width: 100%;height: auto;">Copyright © Tiia Puumalainen, 2023.</p>
+                
+                
+
+        </body>
+    
+
+<!--html lopetus tagi-->
+</html>

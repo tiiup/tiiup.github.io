@@ -1,0 +1,838 @@
+/*-------------------------------------------Home-sivu------------------------------------------------------------------*/
+
+/*taustan väri*/
+body {
+    background-color: rgb(215, 209, 194);
+  }
+
+.bg-custom{
+    background-color: #d7d1c2;
+}
+/*navigaatiopalkin väri ja asettelu*/
+.bg-palkki{
+    width: 1800px;
+	height: 66px;
+	padding: 8px 8px 8px 8px;
+    background-color: #a19e95;
+    border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+}
+
+.rectangle-14 {
+	width: 840px;
+	height: 76px;
+	padding: 8px 8px 8px 8px;
+	background: #d7d1c2;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.image-placeholder-1 {
+	width: 841px; /*841*/
+	height: 225px;/*225*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+.rectangle-12 {
+	width: 840px;
+	height: 66px;
+	padding: 8px 8px 8px 8px;
+	background: #a19e95;
+	border-radius: 3px 3px 3px 3px;
+}
+/*Painikkeet*/
+.button-9 {
+	width: 110px;
+	height: 35px;
+	padding: 0px 10px 0px 10px;
+	background-color: #29323d;
+	color: #ffffff;
+	border-color: #29323d;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px 2px 2px 2px;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: inline-flex;
+	
+   
+}
+
+.selected{
+	background-color: rgb(119, 119, 119);
+    color: rgb(22, 21, 21);
+}
+
+  /* Send -painikkeen ulkoasu yms. */
+  input[type=button-9] {
+    background-color: #29323d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  a:hover {
+	color: rgb(0, 0, 0);
+	background-color: #ccc6c6;
+	
+  }
+ 
+
+.rectangle-13 {
+	width: 840px;
+	height: 307px;
+	padding: 8px 8px 8px 8px;
+	background: #d7d1c2;
+	border-radius: 3px 3px 3px 3px;
+}
+/*Otsikko*/
+.header-19 {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "garamond";
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+/*Alaotsikko*/
+.titteli {
+	width: 1600px;
+	height: 104px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+}
+/*tyhjä väli, yleisesti käytössä joka sivulla + omat tarvittaessa*/
+  p.ex1 {
+    margin: 80px;
+  }
+/*tyhjä väli vasemmalle_ei käytössä*/
+  p.ex2 {
+    margin-left: 80px;
+  }
+/*tyhjä väli oikealle_ei käytössä*/
+  p.ex3 {
+    margin-right: 150px;
+  }
+
+  li {
+    text-align:right;
+  }
+
+ ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+/*Flexbox*/
+#menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  /*listauksen sijainti ja välit painikkeiden väliin*/
+  li {
+    display:inline;
+    padding: 10px 20px;
+}
+/*Painikkeet oikealle puolelle sivua*/
+.align-right {
+    text-align: right;
+    border: 0;
+  }
+  /*Painikkeet oikealle puolelle sivua*/
+.align-center {
+    text-align: center;
+    border: 0;
+  }
+
+  /*Erotinviiva*/
+hr.new1 {
+    border-top: 1px solid grey
+  }
+
+  /*Hamburgermenua varten*/
+  
+  @media (max-width: 767px) {
+	.btn.button-9 {
+	  display: none;
+	}
+  }
+  
+  /* Show the navbar-toggle button on screens smaller than 768px */
+  @media (max-width: 767px) {
+	.navbar-toggle {
+	  display: block;
+	}
+  }
+
+  .links-container {
+	display: flex;
+	justify-content: center;
+  }
+  
+
+/*-------------------------------------------About-sivu------------------------------------------------------------------*/
+
+.header-about {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.container_about {
+    border-radius: 5px;
+    background-color: #edf0f4;
+    padding: 20px;
+	width: 90%;
+	height: 750px;
+	
+  }
+
+
+.col-xs-8 {
+	background-color: #edf0f4;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .col-xs-4, .col-sm-3, .col-lg-3 {
+	padding: 10px;
+  }
+  
+  .img-size {
+	width: 100%;
+	border-radius: 50%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333;
+	font-family: "Sumana";
+	
+  }
+
+
+
+.greybackground {
+    background-color: #edf0f4;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    }
+    /*taustaboksi*/
+   .greybackgroundcontent {
+    background-color: #edf0f4;
+    height: 600px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;  
+    }
+
+    #greybackgroundtext,#greybackgroundimage {
+
+    height: 250px;
+    width:50%;
+    font-family: "Sumana";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+    display:inline-block;
+    vertical-align:middle;
+    }
+
+    /*tyhjä väli*/
+    p.ex_about {
+    margin: 80px;
+    }
+
+  /*Alareunan Copyright*/
+  .copyright {
+	width: 263px;
+	height: 28px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+video {
+	display: block;
+	margin: auto;
+  }
+
+/*-------------------------------------------Resume-sivu------------------------------------------------------------------*/
+
+.header-resume {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+}
+/*Info*/
+.subtitle-resume {
+	width: 1600px;
+	height: 104px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+}
+/*CV painike*/
+.button-CV {
+	width: 155px;
+	height: 35px;
+	float: right;
+	padding: 0px 10px 0px 10px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+	background: #3b4754;
+	color: #ffffff;
+	border-color: #29323d;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px 2px 2px 2px;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+}
+
+.button-CV:hover {
+	background-color: whitesmoke;
+	border: 2px; color: #29323d;
+  }
+
+/*Otsikko work experience*/
+.header-work {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+p.ex_resume {
+    margin: 30px;
+  }
+
+/*"Laatikko experiencelle*/
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 0.8fr 3fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+} 
+.grid-child-element { 
+    /*margin: 10px;*/
+    margin-right: auto;
+    margin-left: auto; 
+     
+}
+
+/*"Laatikko educationille*/
+.grid-container-element2 { 
+    display: flex; 
+	flex-wrap: wrap; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 40px; 
+    border: 1px solid black; 
+    width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+} 
+
+.greybackground2 {
+    background-color: #edf0f4;
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    }
+
+/*tekstiboksin asettelu*/
+#greybackgroundtext2 {
+
+	flex-grow: 1;
+    max-width: 100%;
+    min-height: 170px;
+        font-family: "Sumana";
+        font-weight: 500;
+		font-size: 2.5vw;
+		line-height: 4vh;
+        text-align: left;
+        display:inline-block;
+        vertical-align:middle;
+        }
+
+/*education boksien tekstien asettelu*/		
+.education_text {
+	flex-grow: 1;
+    max-width: 100%;
+            height: 30px;
+            color: #3b4754;
+            font-family: "Sumana";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+
+/*Skills osio*/
+.rectangle-20 {
+	width: 100%;
+	max-width: 594px;
+	height: auto;
+	padding: 8px;
+	background: #edf0f4;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid black; 
+	margin: 0 auto;
+    margin-bottom: 16px;
+}
+.rectangle-22 {
+	width: 100%;
+	max-width: 378px;
+	height: auto;
+	padding: 8px;
+	background: #edf0f4;
+	border-radius: 3px;
+	
+}
+
+.Unity_text {
+	width: 42px;
+	height: 23px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.3;
+	text-align: left;
+}
+.Unity2_text {
+	width: 346px;
+	height: 73px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 1.3;
+	text-align: left;
+}
+.star-ratings-1 {
+	width: 116px;
+	height: 18px;
+	font-size:2em;
+	color: #e5e757;
+	background: #c0c0c0;
+}
+
+
+.my-star::before{
+    content:"\002605";
+	color: #080808;
+}
+/*tähdet*/
+.checked {
+	color: orange;
+	
+  }
+
+
+.UE_text {
+	width: 349px;
+	height: 73px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 1.3;
+	text-align: left;
+}
+.UE2_text {
+	width: 368px;
+	height: 23px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.3;
+	text-align: left;
+}
+.rectangle-23 {
+	width: 378px;
+	height: 30px;
+	padding: 8px 8px 8px 8px;
+	background: #c9d3dd;
+	border-radius: 3px 3px 3px 3px;
+}
+.rectangle-21 {
+	width: 393px;
+	height: 30px;
+	padding: 8px 8px 8px 8px;
+	background: #c9d3dd;
+	border-radius: 3px 3px 3px 3px;
+	display: flex;
+    align-items: center;
+}
+
+
+
+/*-------------------------------------------Projects-sivu------------------------------------------------------------------*/
+
+.header-projects {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+	
+}
+/*Info*/
+.subtitle-projects {
+	width: 1600px;
+	height: 104px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+p.ex_projects {
+    margin: 30px;
+  }
+
+  .left-container_pro, .right-container_pro {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	padding: 10px;
+	box-sizing: border-box;
+	
+  }
+
+  .bg-custom_pro {
+	background-color: lightblue;
+	overflow: auto;
+	
+  }
+
+  
+/*Projektin kuva ja teksti*/
+  .img-with-text {
+    text-align: justify;
+    width: [width of img];
+	max-width: 100%;
+  	height: auto;
+
+	
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+  	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.greybackground_pro {
+    background-color: #c2c1c0cc;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+/*Portfolio web-sivu projektilinkki*/
+.button_portfolio {
+	float:right;
+	width: 74px;
+	height: 34px;
+	padding: 0px 10px 0px 10px;
+	background: #29323d;
+	color: #ffffff;
+	border-color: #29323d;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px 2px 2px 2px;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+    cursor:pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button_portfolio:hover {
+	background-color: #dde4dd;
+	color: rgb(20, 19, 19);
+	
+
+  }
+
+/*----------------------------------------Contact-sivu----------------------------------------------------------------------*/
+
+.header-contact {
+	width: 1600px;
+	height: 35px;
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+}
+/*Info*/
+.subtitle-contac {
+	width: 1600px;
+	height: 104px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+}
+.rectangle-4 {
+	width: 799px;
+	height: 399px;
+	padding: 8px 8px 8px 8px;
+	background: #a19e95;
+	border-radius: 3px 3px 3px 3px;
+}
+.github {
+	width: 30px;
+	height: 30px;
+	border-radius: 3px 3px 3px 3px;
+}
+.linkedin {
+	width: 37px;
+	height: 28px;
+	border-radius: 9px 9px 9px 9px;
+}
+.yhteystiedot {
+	width: 226px;
+	height: 138px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: left;
+}
+.mail-outline-icon-2 {
+	width: 13px;
+	height: 10px;
+	background: #232323;
+}
+.circle-5 {
+	width: 28px;
+	height: 30px;
+	background: #edf0f4;
+}
+.phone-icon-2 {
+	width: 13px;
+	height: 14px;
+	background: #232323;
+}
+.circle-6 {
+	width: 28px;
+	height: 30px;
+	background: #edf0f4;
+}
+.location-on-icon-2 {
+	width: 10px;
+	height: 14px;
+	background: #232323;
+}
+.circle-4 {
+	width: 28px;
+	height: 30px;
+	background: #edf0f4;
+}
+
+.col-lg-11 {
+	background-color: #edf0f4;
+	padding: 20px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.center {
+  margin: auto;
+}
+
+/* Contact form*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Send -painikkeen ulkoasu yms. */
+  input[type=submit] {
+    background-color: #29323d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+  }
+  
+  /* Hiiren liike Send-painikkeen kohdalla muuttaa sen väriä */
+  input[type=submit]:hover {
+    background-color: #d8dce0;
+	color:#0f0f0f;
+	cursor: pointer;
+	
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #a19e95;
+    padding: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+  }
+
+  .center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+  /*Alareunan Copyright*/
+  .copyright {
+	width: 263px;
+	height: 28px;
+	color: #3b4754;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+p.ex_contact {
+    margin: 30px;
+  }
+
+/*Yhteystietojen paikka(Contact Details)*/
+  .contact-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+	
+  }
+
+  .contact-details {
+	flex-basis: 40%;
+	margin-right: 20px;
+  }
+
+  .contact-form {
+	flex-basis: 60%;
+  }
+  
+  /*Contact Details-otsikko*/
+.header_details {
+	color: #3b4754;
+	font-family: "Sumana";
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+/*Alaotsikko*/
+.contact_info {
+	color: #3b4754;
+	font-family: "Sumana";
+	font-weight: 400;
+	font-size: 18px;
+	
+}
+
+a {
+	background-color: transparent;
+	border: none;
+	outline: none;
+  }
+  
+  a:hover {
+	background-color: transparent;
+	border: transparent
+  }
+
+/*----------------------------------------Contact-sivun kiitusta osio----------------------------------------------------------------------*/
+
+.link-container {
+	display: flex;
+	justify-content: center;
+		
+  }
+  
+  

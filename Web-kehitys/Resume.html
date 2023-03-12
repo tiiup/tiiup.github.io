@@ -1,0 +1,567 @@
+<!--HTML-versio jota käytetään-->
+<!DOCTYPE html>
+
+<html lang="fi">
+<!--html aloitus tagi-->
+
+<!--Tähtiluokitusta varten, Font Awesome Icon Library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Yleiset (otsikkotason) määritykset-->
+    <head>
+        <link rel="stylesheet" href="tyyli.css">
+
+        <title> Resume</title>
+        <!--Merkistön koodaustapa-->
+        <meta charset="utf-8">
+        <!--Katseluikkunan leveyden määritys: määritetään seuraamaan ruudun leveyttä-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        
+        <!--Oma CSS tiedosto "tyyli"-->
+        <link rel="stylesheet" href="tyyli.css">
+        <link rel="stylesheet" href="navigointi2.css">
+        <link rel="stylesheet" href="navigointi1.css">
+
+        <!-- (Verkon yli haettu) Bootstrapin tarvitsema JQuery-tiedosto.-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    </head>
+
+        <body>
+
+               
+            <!--Yläpalkin taustanväri-->
+            <div class="container-fluid bg-custom2">
+                <div class = "row"></div>
+            
+                <!--Kuvan ja sen skaalaus-->
+                <img src="kukkasia.jpg" class="img-fluid" style="width: 100%;height: auto;" alt="Yläosankuva"> 
+                
+                <!--Navigointipalkki-->
+              
+                <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <div class="container_nav">
+                 <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+                        
+                    
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                
+                
+                
+
+                <!-- Navigointipalkin painikkeet -->
+                <li><a href="Home.html" type= button-9 class="btn button-9">Home</a></li>
+                <li><a href="About.html" type= button-9 class="btn button-9">About</a></li>
+                <li><a href="Resume.html" type= button-9 class="button-9"class="btn button-9">Resume</a></li>
+                <script>
+                    // Get all the buttons
+                    const buttons = document.querySelectorAll('.button-9');
+                
+                    // Loop through the buttons and add an event listener to each one
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Remove the "selected" class from all buttons
+                            buttons.forEach(button => {
+                                button.classList.remove('selected');
+                            });
+                
+                            // Add the "selected" class to the clicked button
+                            button.classList.add('selected');
+                        });
+                    });
+                </script>
+                <li><a href="Projects.html" type= button-9 class="btn button-9">Projects</a></li>
+                <li><a href="Contact.html" type= button-9 class="btn button-9">Contact</a></li>
+                
+                </ul>
+            </div> 
+            </nav>
+        </div>       
+              <div class="container-fluid bg-custom">
+                <div class = "row"></div>
+
+            <!--Otsikko-->  
+            <p class="ex1"></p>
+            <h1 class="header-resume" style="width: 100%;height: auto;">Resume</h1>
+            <br> 
+            <p class="subtitle-resume" style="width: 100%;height: auto;">Täältä sivulta löytyy koottuna työhistoriani, koulutukseni, sekä osaamiseni.</p> 
+               <p class="ex1"></p>
+               <hr class ="new1">
+
+<!--Work experience alkaa tästä-->
+               <h1 class="header-work" style="width: 100%;height: auto;">Work experience</h1>
+               <br>
+               <li><a href="images/CV_web.png" alt="Link to CV" target="_blank" class="btn button-CV">View CV</a></li>
+               <br>
+               <p class="ex1"></p>
+
+               <div class="greybackground">
+                <div class="grid-container-element">
+                    <div class="grid-child-element purple"><br>1/2020 -<br>
+                        <strong>Sovellusvastaava/<br> Application Manager</strong>
+                    </div>
+                    
+                    <div class="grid-child-element green"><br><strong>Pohjois-Karjalan hyvinvointialue Siun sote</strong><br>
+                        <br>
+                        <p style="text-align: left; margin: 15px;">    
+                        Työskentelen tällä hetkellä sovellusvastaavana kuvantamiskeskuksessa. Työtehtäviini kuuluu muun muassa ongelmatilanteiden selvittäminen ja toimintaan liittyvien asiakokonaisuuksien ylläpito, sekä niiden kehittäminen yhteistyössä muiden tahojen kanssa. Vastaamme kuvantamisen tuesta, eli työhön kuuluu paljon käyttäjien auttamista ja neuvomista puhelimitse ja sähköpostitse. 
+                        Työskentelemme pienessä kolmen hengen tiimissä, jolloin työtehtävässämme tarvitaan itseohjautuvuutta, ongelmanratkaisukykyjä, sekä kykyä hahmottaa laajoja asiakokonaisuuksia.</div>
+                        </p>
+                </div>
+                </div>
+                </div>
+
+                <br>
+                
+                <div class="greybackground">
+                    <div class="grid-container-element">
+                        <div class="grid-child-element purple"><br>5/2018 - 12/2019<br>
+                            <strong>Sairaanhoitaja/<br> Registered Nurse</strong>
+                        </div>
+                        
+                        <div class="grid-child-element green"><br><strong>Pohjois-Karjalan sosiaali- ja terveyspalveluiden kuntayhtymä Siun sote</strong><br>
+                              
+                            <p style="text-align: left; margin: 15px;">
+                            Työskentelin Kliinisellä fysiologialla potilastutkimusten parissa. Työtehtäviini kuului
+                            kuormituskokeiden, holter- ja vuorokausi verenpaine tutkimusten, perifeeristenpaineenmittausten, sekä ekg-rekisteröintien tekeminen yhteistyössä työparin tai lääkärin kanssa. 
+                            Työtehtävissä tarvittiin hyviä asiakaspalvelutaitoja, tilannetajua, joustavuutta, sekä ongelmanratkaisutaitoja. </div>
+                            </p>
+                    </div>
+                    </div>
+                    </div>
+    
+                    <p class="ex1"></p>
+                    <hr class ="new1">
+                   
+<!--Education alkaa tästä-->
+
+                <h1 class="header-work" style="width: 100%;height: auto;">Education</h1>
+
+                    <p class="ex1"></p>
+
+
+                    <div class="greybackground2">
+                        <div class="grid-container-element2">
+                            <div id="greybackgroundtext2">
+                            <br>
+                                
+                                <p class="education_text vw"><strong>Karelia-ammattikorkeakoulu Joensuu, 8/2022–</strong></p>
+                                
+                                <p style="text-align: center; margin: 1px;">  
+                                Liiketalouden ammattikorkeakoulututkinto, Tradenomi, Tietojenkäsittely<br>
+                                Bachelor of Business Administration, Tradenomi, BBA, Business Information Technology
+                                </p>
+                                
+                                <p style="text-align: center; margin: 1px;">            
+                                <em>Arvioitu valmistuminen: 12/2024</em> </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <br>
+
+                        <div class="greybackground2">
+                            <div class="grid-container-element2">
+                                <div id="greybackgroundtext2">
+                                    <br>
+                                    <p class="education_text"><strong>Karelia-ammattikorkeakoulu Joensuu, 2017</strong>
+                                    <br>
+                                    <br>
+                                    <p style="text-align: center; margin: 15px;">  
+                                    Sosiaali- ja terveysalan ammattikorkeakoulututkinto, sairaanhoitaja 210 op/3,5v<br>
+                                    Bachelor of Health Care and Social Services
+                                    </p>
+                                             
+                                   <p style="text-align: center; margin: 1px;"> <em>Täydentävät opinnot: Palliatiivinen hoito</em> </p></div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+
+                            <br>
+
+                            <div class="greybackground2">
+                                <div class="grid-container-element2">
+                                    <div id="greybackgroundtext2">
+                                    <div class="grid-child-element green"><br>
+                                        <p class="education_text"><strong>Pohjois-Karjalan ammattiopisto Outokumpu, 2010</strong>
+                                        <br>
+                                        <br>
+                                        <p style="text-align: center; margin: 15px;">     
+                                        Sosiaali- ja terveysalan perustutkinto, lähihoitaja 120 ov/3v<br>
+                                        Vocational qualification in social and health care, practical nurse
+                                        </p>
+                                         
+                                        <p style="text-align: center; margin: 1px;">          
+                                        <em>Erikoistuminen: Sairaanhoito- ja huolenpidon koulutusohjelma</em> </p></div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+
+                    <p class="ex1"></p>
+                    <hr class ="new1">
+
+
+<!--Skills alkaa tästä-->
+<style>
+    /*Tähtiluokitusta varten*/
+    .checked {
+      color: orange;
+      width: 25px;
+    }
+    </style>
+
+
+
+<h1 class="header-work" style="width: 100%;height: auto;">Skills</h1>
+
+<br>
+<br>
+                <div class="col-xs-10 col-sm-6 col-lg-12">
+                    <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="col-xs-10 col-sm-6 col-lg-6">
+                    <div class="rectangle-20">
+                        <div class="renctangle-22">
+                            <div id="skills_background">
+                                
+                               
+                            <div class="rectangle-21" style="width: 100%;height: auto;"> 
+                            <p><strong>Unity</strong> 
+                            <div class="checked" style="width: 100%;height: auto;"> </div>
+                            
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                        
+                               <p style="text-align: left; margin: 2px;">
+                                Unity pelimoottoriin olen päässyt tutustumaan Kaakkois-Suomen ammattikorkeakoulun ”Johdatus peliohjelmointiin” ja ”Peliohjelmointi” kurssien myötä. 
+                                Harjoitustöinä näillä kursseilla tein 2D- ja 3D-pelit, sekä muutaman pienemmän harjoituksen. 
+                                </p>
+                                <br>
+                                             
+                            
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+                        <br>
+                        
+        <!--Blender-->     
+        <div class="col-xs-10 col-sm-6 col-lg-6">    
+                    <div class="rectangle-20">
+                        <div class="renctangle-22">
+                            <div id="skills_background">
+                               
+                   <div class="rectangle-21" style="width: 100%;height: auto;"> 
+                    <p> <strong>Blender</strong> 
+                    <div class="checked" style="width: 100%;height: auto;"> </div>
+                    
+                            
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                        
+                        <p style="text-align: left; margin: 2px;">
+                        Blenderiä olen käyttänyt parin kurssiprojektin aikana, sekä käynyt siitä Metropolia-ammattikorkeakoulun järjestämän kurssin.
+                        Projekteissa ja kurssilla pääsin tekemään 3D-mallinnusta ja animointia. 
+                        </p>
+                        <br> 
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                
+        <!--Mediatri-->
+            <br> 
+            <div class="col-xs-10 col-sm-6 col-lg-12">
+                <div class="row justify-content-center">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-6 col-lg-6">
+                <div class="rectangle-20">
+                    <div class="renctangle-22">
+                        <div id="skills_background">
+                        
+           <div class="rectangle-21" style="width: 100%;height: auto;"> 
+           <p> <strong>Mediatri</strong> 
+           <div class="checked" style="width: 100%;height: auto;"> </div>
+            
+                    
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+     
+                
+                <p style="text-align: left; margin: 2px;">
+                Mediatri potilastietojärjestelmää olen käyttänyt erilaisissa sosiaali- ja terveysalan työympäristöissä, joten Mediatrin käyttö ja toiminta
+                on minulle tuttua ns. peruskäyttäjän näkökulmasta.
+                </p>
+                <br> 
+            </div>
+        </div>
+      </div>
+    </div>
+                <br> 
+        <!--Java-->  
+            <br> 
+            <div class="col-xs-10 col-sm-6 col-lg-6">
+                <div class="rectangle-20">
+                  <div class="renctangle-22">
+                    <div id="skills_background">
+                    
+           <div class="rectangle-21" style="width: 100%;height: auto;"> 
+            <p><strong>Java</strong> 
+           <div class="checked" style="width: 100%;height: auto;"> </div>
+            
+                    
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+                
+                <p style="text-align: left; margin: 2px;">
+                Java on ollut käytössä tietojenkäsittelyn opintojeni alusta lähtien eri kursseilla ja projekteissa, joten sen myötä se onkin eri ohjelmointikielistä parhaiten hallussani.
+                </p>
+                <br>
+                
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        <!--C++-->  
+            <br> 
+            <div class="col-xs-10 col-sm-6 col-lg-12">
+                <div class="row justify-content-center">
+                  <div class="row">
+                    <div class="col-xs-10 col-sm-6 col-lg-6">
+                      <div class="rectangle-20">
+                        <div class="renctangle-22">
+                          <div id="skills_background">
+                       
+            <div class="rectangle-21" style="width: 100%;height: auto;"> 
+            <p><strong>C++</strong> 
+            <div class="checked" style="width: 100%;height: auto;"> </div>
+            
+                    
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+                
+                <p style="text-align: left; margin: 2px;"></p>
+                C++ ohjelmointikieltä olen opiskellut yhden Metropolia-ammattikorkeakoulun kurssin verran, eli hieman perusteita on halussa tällä hetkellä kyseisestä ohjelmointikielestä.
+                </p>
+                <br> 
+            </div>
+        </div>
+    </div>
+    </div>
+    
+        <!--O365-->  
+            <br> 
+            <div class="col-xs-10 col-sm-6 col-lg-6">
+                <div class="rectangle-20">
+                  <div class="renctangle-22">
+                    <div id="skills_background">
+                    
+           <div class="rectangle-21" style="width: 100%;height: auto;"> 
+           <p><strong>O365</strong> 
+           <div class="checked" style="width: 100%;height: auto;"></div>
+            
+                    
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+                
+                <p style="text-align: left; margin: 2px;">
+                Office 365 ohjelmat, erityisesti Word,Excel, Outlook, Teams ja PowerPoint, ovet olleet käytössä niin työssä kuin opiskelujenkin aikana,
+                joten niiden käyttäminen sujuu luontevasti ja ongelmitta.
+                </p>
+                <br>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+        <!--Git-->  
+        <br> 
+        <div class="col-xs-10 col-sm-6 col-lg-12">
+            <div class="row justify-content-center">
+              <div class="row">
+                <div class="col-xs-10 col-sm-6 col-lg-6">
+                  <div class="rectangle-20">
+                    <div class="renctangle-22">
+                      <div id="skills_background">
+                
+       <div class="rectangle-21" style="width: 100%;height: auto;">
+       <p><strong>Git</strong>
+       <div class="checked" style="width: 100%;height: auto;"> </div>
+        
+                
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+            
+            <p style="text-align: left; margin: 2px;">
+            Git-versiohallinta on tullut tutuksi koulun projektitöiden kautta, ja koen sen käytön olevan nykyisin hyvinkin luontevaa.
+            </p>
+            <br>
+        </div>
+        </div> 
+        </div>
+        </div>
+
+        <!--NeaRIS-->  
+        <br> 
+        <div class="col-xs-10 col-sm-6 col-lg-6">
+            <div class="rectangle-20">
+              <div class="renctangle-22">
+                <div id="skills_background">
+                
+        <div class="rectangle-21" style="width: 100%;height: auto;">
+        <p><strong>neaRIS</strong> 
+        <div class="checked" style="width: 100%;height: auto;"> </div>
+        
+                
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+            
+            <p style="text-align: left; margin: 2px;">
+            neaRIS toiminnanohjausjärjestelmä on tullut minulle hyvinkin tutuksi käyttäessäni sitä sekä peruskäyttäjän, että pääkäyttäjän roolissa.
+            </p>
+            <br>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+        <!--JavaScript-->  
+        <br> 
+        <div class="col-xs-10 col-sm-6 col-lg-12">
+            <div class="row justify-content-center">
+              <div class="row">
+                <div class="col-xs-10 col-sm-6 col-lg-6">
+                  <div class="rectangle-20">
+                    <div class="renctangle-22">
+                      <div id="skills_background">
+                
+        <div class="rectangle-21" style="width: 100%;height: auto;"> 
+        <p><strong>JavaScript</strong> 
+        <div class="checked" style="width: 100%;height: auto;"> </div>
+        
+                
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+            
+            <p style="text-align: left; margin: 2px;">
+            JavaScriptiä olen opiskellut muutaman ohjelmointikurssin verran Kaakkois-Suomen ammattikorkeakoulun ja Metropolia-ammattikorkeakoulun kautta.
+            </p>
+            <br>
+        </div>
+        </div>   
+    </div>
+    </div>
+
+        <!--C#-->  
+        <br> 
+        <div class="col-xs-10 col-sm-6 col-lg-6">
+        <div class="rectangle-20">
+          <div class="renctangle-22">
+            <div id="skills_background">
+                
+        <div class="rectangle-21" style="width: 100%;height: auto;"> 
+        <p><strong>C#</strong> 
+        <div class="checked" style="width: 100%;height: auto;"> </div>
+        
+                
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+            
+            <p style="text-align: left; margin: 2px;">
+            C# ohjelmointikieleen olen tutustunut Unity-pelimoottorin kautta. Muuten en ole vielä kyseistä ohjelmointikieltä päässyt hyödyntämään.
+            </p>
+            <br>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+        <br>
+
+                    <p class="ex1"></p>
+                    
+<p class="ex1"></p>
+
+                <hr class ="new1">
+                <br> 
+                <p class="copyright" style="width: 100%;height: auto;">Copyright © Tiia Puumalainen, 2023.</p>
+        </body>
+    </html>
