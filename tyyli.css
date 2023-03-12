@@ -168,18 +168,6 @@ hr.new1 {
 
   /*Hamburgermenua varten*/
   
-  @media (max-width: 767px) {
-	.btn.button-9 {
-	  display: none;
-	}
-  }
-  
-  /* Show the navbar-toggle button on screens smaller than 768px */
-  @media (max-width: 767px) {
-	.navbar-toggle {
-	  display: block;
-	}
-  }
 
   .links-container {
 	display: flex;

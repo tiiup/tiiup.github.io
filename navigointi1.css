@@ -1,4 +1,4 @@
-@media (min-width: 973px) {
+@media (min-width: 918px) {
     .navbar-toggle {
       display: none;
       
@@ -56,7 +56,7 @@
       }
   }
   
-  @media (max-width: 972) {
+  @media (max-width: 100px) {
     .navbar-toggle {
       display: block;
     }
