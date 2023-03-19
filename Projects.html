@@ -1,13 +1,12 @@
 <!--HTML-versio jota käytetään-->
 <!DOCTYPE html>
 
-<html lang="fi">
+<html lang="en">
 <!--html aloitus tagi-->
 
     <!--Yleiset (otsikkotason) määritykset-->
     <head>
-        <link rel="stylesheet" href="tyyli.css">
-
+        
         <title> Projects</title>
         <!--Merkistön koodaustapa-->
         <meta charset="utf-8">
@@ -34,12 +33,13 @@
             <!--Yläpalkin taustanväri-->
             <div class="container-fluid bg-custom2">
                 <div class = "row"></div>
-            
+                <div class="col-12">
                 <!--Kuvan ja sen skaalaus-->
-                <img src="images/kukkasia.jpg" class="img-fluid" style="width: 100%;height: auto;" alt="Yläosankuva"> 
-                
+                <img src="images/kukkasia.jpg" class="img-fluid" style="max-width: 100%;" alt="Yläosankuva">
+                </div>
                 <!--Navigointipalkki-->
               
+                <div class="col-12">
                 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
                     <div class="container_nav">
                  <div class="navbar-header">
@@ -96,11 +96,12 @@
             <!--Kuva ja teksti laatikon sisään-->
 <!--Portfolio-->
             <div class="container-fluid bg-custom">
-            <div class="left-container_pro">  
+            <div class="row">
+            <div class="left-container_pro col-sm-12 col-md-6">  
             <div class="greybackground_pro">
                 <p style="text-align: center;"><strong>Portfolio web-sivu, kevät 2023</strong></p>
                 <div class="img-with-text">
-                    <img src="images/git_portf..jpg" alt="Portfolio web-sivu" width="450" height="230" />
+                    <img src="images/git_portf..jpg" alt="Portfolio web-sivu" class="img-fluid" />
                     <p style="text-align: left; margin: 15px;">
                         Tämä portfolio-websivu on tehty opintoihini kuuluvan web- ja mobiilikäyttöliittymät kurssin projektityönä. Tarkoituksena oli saada aikaan sivut, joita pystyn hyödyntämään myös jatkossa harjoittelu- ja työpaikan haussa. 
                         </p>
@@ -116,12 +117,12 @@
             </div> 
         </div>
 <!--2D side scroller-->
-            <div class="right-container_pro">
+            <div class="right-container_pro col-sm-12 col-md-6">
                 
                 <div class="greybackground_pro">
                     <p style="text-align: center;"><strong>2D side scroller -peli, syksy 2022</strong></p>
                     <div class="img-with-text">
-                        <img src="images/side_scroller.png" alt="2D side scroller -peli" width="450" height="230" />
+                        <img src="images/side_scroller.png" alt="2D side scroller -peli" class="img-fluid" />
                         <p style="text-align: left; margin: 15px;">
                             Peli on toteutettu Unreal Engine pelimoottorilla Karelia ammattikorkeakoulun opintojaksolle harjoitustyönä.<br>
                             Toiminnallisuus peliin toteutettu hyödyntämällä nodeja. Pelin ideana on kerätä ilmassa vastaan lentäviä kolikoita ja väistellä myrkkypulloja. 
@@ -136,18 +137,19 @@
                     </a>
                     <br>  
             
-            
+                </div>
             </div>
                 </div>
 
             </div>
 <!--Asiakkaan toiveen mukainen peli-->
 <div class="container-fluid bg-custom">
-    <div class="left-container_pro">  
+    <div class="row">
+    <div class="left-container_pro col-sm-12 col-md-6">  
     <div class="greybackground_pro">
         <p style="text-align: center;"><strong>Asiakkaan toiveiden mukaan suunniteltu peli, syksy 2022</strong></p>
         <div class="img-with-text">
-            <img src="images/placeholder_i.jpg" alt="Placeholder" width="450" height="230" />
+            <img src="images/placeholder_i.jpg" alt="Placeholder" class="img-fluid" />
             <p style="text-align: left; margin: 15px;">
                 Tämä projekti kuului toisen vuoden opintoihini ja projektissa tavoitteena oli toteuttaa asiakkaan toiveiden mukainen peli. Toiminnallisuus peliin toteutettiin hyödyntämällä nodeja.<br>
                 Projektissa toimimme neljän hengen tiimissä SCRUM periaatteiden mukaisesti. SCRUM tiimissä toimin kehittäjänä, ja pääasiassa vastuullani oli valmistella asiakkaan piirroksista 2D hahmoja,
@@ -159,12 +161,12 @@
     </div> 
 </div>
 <!--Toimistotilojen varausjärjestelmä-->
-    <div class="right-container_pro">
+    <div class="right-container_pro col-sm-12 col-md-6">
         
         <div class="greybackground_pro">
             <p style="text-align: center;"><strong>Toimistotilojen varausjärjestelmä, kevät 2022:</strong></p>
             <div class="img-with-text">
-                <img src="images/placeholder_i.jpg" alt="Placeholder" width="450" height="230" />
+                <img src="images/placeholder_i.jpg" alt="Placeholder" class="img-fluid" />
                 <p style="text-align: left; margin: 15px;">
                     Tämä projekti kuului osaksi ensimmäisen vuoden opintojani. Tarkoituksena oli suunnitella kuvitteelliselle yritykselle toimipisteiden, palveluiden, asiakkaiden, toimistotilavarausten, laskujen, ja lisäpalveluiden hallintajärjestelmä.<br>
                     Projektissa toimimme viiden henkilön tiimissä ja jokaisella tiimiläisellä oli vastuulla oma osio ohjelmasta. Ohjelmointikielenä toimi Java. 
@@ -173,18 +175,19 @@
             </div>
             
             <br>  
-    
+        </div>
     </div>
         </div>
 
     </div>
 <!--3D-peli-->
 <div class="container-fluid bg-custom">
-    <div class="left-container_pro">  
+    <div class="row">
+    <div class="left-container_pro col-sm-12 col-md-6">  
     <div class="greybackground_pro">
         <p style="text-align: center;"><strong>3D-peli, kevät 2022</strong></p>
         <div class="img-with-text">
-            <img src="images/3D-peli.jpg" alt="3D-peli" width="450" height="230" />
+            <img src="images/3D-peli.jpg" alt="3D-peli" class="img-fluid" />
             <p style="text-align: left; margin: 15px;">
                 Unity pelimoottorilla toteutettu harjoitustyö Kaakkois-Suomen ammattikorkeakoulun peliohjelmointi kurssille, jossa toteutin yksinkertaisen 3D pelin. Ohjelmointikielenä kurssilla oli C#.<br>
                 Pelissä on tarkoitus kerätä tietty määrä pelimaailmaan piiloutuneita kissoja mahdollisimman nopeasti.
@@ -201,12 +204,12 @@
     </div> 
 </div>
 <!--2D-peli-->
-    <div class="right-container_pro">
+    <div class="right-container_pro col-sm-12 col-md-6">
         
         <div class="greybackground_pro">
             <p style="text-align: center;"><strong>2D-peli, syksy 2021</strong></p>
             <div class="img-with-text">
-                <img src="images/2D-peli.jpg" alt="2D-peli" width="450" height="230" />
+                <img src="images/2D-peli.jpg" alt="2D-peli" class="img-fluid" />
                 <p style="text-align: left; margin: 15px;">
                     Unityn pelimoottorilla toteutettu harjoitustyö Kaakkois-Suomen ammattikorkeakoulun johdatus peliohjelmointiin kurssille, jossa toteutin yksinkertaisen tasohyppelypelin. Ohjelmointikielenä kurssilla oli C#.<br>
                     Pelissä tarkoituksena on kerätä ilmassa lentäviä kolikoita mahdollisimman paljon ennen kuin aika loppuu.  
@@ -226,7 +229,7 @@
         </div>
 
     </div>
-
+</div>
 
 
 
